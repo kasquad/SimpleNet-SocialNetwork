@@ -1,0 +1,17 @@
+C:\Users\rodme\RiderProjects\SimpleSocialNetwork\SimpleNet.Services\bin\Debug\net6.0\SimpleNet.Services.deps.json
+C:\Users\rodme\RiderProjects\SimpleSocialNetwork\SimpleNet.Services\bin\Debug\net6.0\SimpleNet.Services.dll
+C:\Users\rodme\RiderProjects\SimpleSocialNetwork\SimpleNet.Services\bin\Debug\net6.0\SimpleNet.Services.pdb
+C:\Users\rodme\RiderProjects\SimpleSocialNetwork\SimpleNet.Services\bin\Debug\net6.0\SimpleNet.Application.dll
+C:\Users\rodme\RiderProjects\SimpleSocialNetwork\SimpleNet.Services\bin\Debug\net6.0\SimpleNet.Domain.dll
+C:\Users\rodme\RiderProjects\SimpleSocialNetwork\SimpleNet.Services\bin\Debug\net6.0\SimpleNet.Application.pdb
+C:\Users\rodme\RiderProjects\SimpleSocialNetwork\SimpleNet.Services\bin\Debug\net6.0\SimpleNet.Domain.pdb
+C:\Users\rodme\RiderProjects\SimpleSocialNetwork\SimpleNet.Services\obj\Debug\net6.0\SimpleNet.Services.csproj.AssemblyReference.cache
+C:\Users\rodme\RiderProjects\SimpleSocialNetwork\SimpleNet.Services\obj\Debug\net6.0\SimpleNet.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rodme\RiderProjects\SimpleSocialNetwork\SimpleNet.Services\obj\Debug\net6.0\SimpleNet.Services.AssemblyInfoInputs.cache
+C:\Users\rodme\RiderProjects\SimpleSocialNetwork\SimpleNet.Services\obj\Debug\net6.0\SimpleNet.Services.AssemblyInfo.cs
+C:\Users\rodme\RiderProjects\SimpleSocialNetwork\SimpleNet.Services\obj\Debug\net6.0\SimpleNet.Services.csproj.CoreCompileInputs.cache
+C:\Users\rodme\RiderProjects\SimpleSocialNetwork\SimpleNet.Services\obj\Debug\net6.0\SimpleNet.Services.csproj.CopyComplete
+C:\Users\rodme\RiderProjects\SimpleSocialNetwork\SimpleNet.Services\obj\Debug\net6.0\SimpleNet.Services.dll
+C:\Users\rodme\RiderProjects\SimpleSocialNetwork\SimpleNet.Services\obj\Debug\net6.0\refint\SimpleNet.Services.dll
+C:\Users\rodme\RiderProjects\SimpleSocialNetwork\SimpleNet.Services\obj\Debug\net6.0\SimpleNet.Services.pdb
+C:\Users\rodme\RiderProjects\SimpleSocialNetwork\SimpleNet.Services\obj\Debug\net6.0\ref\SimpleNet.Services.dll

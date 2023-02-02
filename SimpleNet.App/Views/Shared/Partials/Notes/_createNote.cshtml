@@ -1,0 +1,18 @@
+﻿@model SimpleNet.ViewModels.Notes.CreateNoteVm
+
+<div class ="mb-3">
+    <form asp-controller="Notes" asp-action="create" method="POST">
+        <div class="mb-2">
+            <input asp-for="Body" class="form-control" placeholder="Что у вас нового?"/>
+        </div>
+        <div class="mb-2">
+            <input asp-for="IsPersonal" class="form-check-input" id="isPersonalCheck" type="checkbox"/>
+            <label class="form-check-label" for="isPersonalCheck">
+                Приватная запись
+            </label>
+        </div>
+        <div class="mb-2">
+        <input type="submit" class="btn btn-primary btn-block mb-4" value="Добавить запись"/>
+        </div>
+    </form> 
+</div>

@@ -1,0 +1,22 @@
+﻿@model SimpleNet.ViewModels.Auth.RegisterVm
+<div class="justify-content-center w-50">
+    <form asp-controller="Auth" asp-action="Register">
+        <div class="form-outline mb-4">
+            <input asp-for="FullName" class="form-control" placeholder="Имя"/>
+        </div>
+
+        <div class="form-outline mb-4">
+            <input asp-for="Email" class="form-control" placeholder="Почта"/>
+        </div>
+
+        <div class="form-outline mb-4">
+            <input asp-for="Password" class="form-control" placeholder="Пароль"/>
+        </div>
+
+        <div class="form-outline mb-4">
+            <input asp-for="ConfirmPassword" class="form-control" placeholder="Подтверждение пароля"/>
+        </div>
+
+        <input type="submit" class="btn btn-primary btn-block mb-4" value="Зарегестрироваться"/>
+    </form>
+</div>

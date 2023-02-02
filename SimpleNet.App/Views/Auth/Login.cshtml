@@ -1,0 +1,16 @@
+﻿@model SimpleNet.ViewModels.Auth.LoginVm
+<div class="justify-content-center w-50">
+  <form asp-action="Login">
+    
+    <div class="form-outline mb-4">
+      <input asp-for="Email" class="form-control" placeholder="Почта"/>
+    </div>
+
+    <div class="form-outline mb-4">
+      <input asp-for="Password" class="form-control" placeholder="Пароль"/>
+    </div>
+    
+    <input type="submit" class="btn btn-primary btn-block mb-4" value="Войти"/>
+  </form>
+      <a asp-action="Register">Зарегистрироваться</a>
+</div>

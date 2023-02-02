@@ -1,0 +1,19 @@
+﻿@model SimpleNet.ViewModels.User.MyUserPageVm
+@{
+    ViewBag.Title = "Моя страница";
+    Layout = "_Layout";
+}
+
+<h2>@ViewBag.Title</h2>
+<div class="mt-4 mb-3">
+    <h4>Имя: @Model.UserFullName</h4>
+</div>
+
+<div class="mt-3 mb-3">
+    <partial name="Partials/Notes/_createNote" model="Model.CreateNoteVm"/>
+</div>
+
+@foreach (var news in @Model.Notes)
+{
+    <partial name="Partials/Notes/_showNote" model="news"/>
+}
