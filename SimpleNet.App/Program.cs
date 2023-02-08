@@ -1,3 +1,4 @@
+using System.Text.Json.Serialization;
 using SimpleNet.OptionsSetup;
 using SimpleNet.Persistence;
 using SimpleNet.Application;
@@ -13,7 +14,9 @@ var configuration = builder.Configuration;
 builder.Services.AddApplication();
 builder.Services.AddPersistence(configuration);
 
-builder.Services.AddControllersWithViews();
+builder.Services.AddControllersWithViews()
+    .AddJsonOptions( o => 
+        o.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles);
 
 builder.Services.ConfigureOptions<JwtOptionsSetup>();
 builder.Services.ConfigureOptions<JwtBearerOptionsSetup>();

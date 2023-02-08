@@ -1,14 +1,16 @@
-﻿using SimpleNet.Application.Users.Queries.GetUserPage;
-using SimpleNet.DataModels.User;
+﻿using SimpleNet.Application.Users.Queries.GetMyUserPage;
+using SimpleNet.Domain.Models;
 using SimpleNet.ViewModels.Notes;
 
 namespace SimpleNet.ViewModels.User;
 
-public class MyUserPageVm : UserPageVm
+public class MyUserPageVm 
 {
+    public string FullName { get; set; }
+    public ICollection<Note> Notes { get; set; } = new List<Note>();
     public CreateNoteVm CreateNoteVm { get; set; } = new();
     
-    public static explicit operator MyUserPageVm(UserPageDto dto)
+    public static explicit operator MyUserPageVm(MyUserPageDto dto)
     {
         if (dto is null)
         {
@@ -17,8 +19,9 @@ public class MyUserPageVm : UserPageVm
 
         return new MyUserPageVm
         {
-            UserFullName = dto.UserName,
-            Notes = dto.Notes.Select(n => (NoteVm)n).ToList()
+            FullName = dto.UserName,
+            // Notes = dto.Notes.Select(n => (NoteVm)n).ToList()
+            Notes = dto.Notes
         };
     }
 }

@@ -23,6 +23,18 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/rodme/RiderProjects/SimpleSocialNetwork/SimpleNet.App/Views/Friends/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRnJpZW5kc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rodme/RiderProjects/SimpleSocialNetwork/SimpleNet.App/Views/Friends/Requests.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRnJpZW5kc1xSZXF1ZXN0cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rodme/RiderProjects/SimpleSocialNetwork/SimpleNet.App/Views/Friends/SearchFriends.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRnJpZW5kc1xTZWFyY2hGcmllbmRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/rodme/RiderProjects/SimpleSocialNetwork/SimpleNet.App/Views/Notes/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm90ZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -35,8 +47,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFBhcnRpYWxzXE5vdGVzXF9jcmVhdGVOb3RlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/rodme/RiderProjects/SimpleSocialNetwork/SimpleNet.App/Views/Shared/Partials/Notes/_showFriendNote.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFBhcnRpYWxzXE5vdGVzXF9zaG93RnJpZW5kTm90ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/rodme/RiderProjects/SimpleSocialNetwork/SimpleNet.App/Views/Shared/Partials/Notes/_showNote.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFBhcnRpYWxzXE5vdGVzXF9zaG93Tm90ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rodme/RiderProjects/SimpleSocialNetwork/SimpleNet.App/Views/Shared/Partials/User/_userMin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFBhcnRpYWxzXFVzZXJcX3VzZXJNaW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/rodme/RiderProjects/SimpleSocialNetwork/SimpleNet.App/Views/Shared/_ValidationScriptsPartial.cshtml]
@@ -45,6 +65,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/rodme/RiderProjects/SimpleSocialNetwork/SimpleNet.App/Views/User/MyPage.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxNeVBhZ2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rodme/RiderProjects/SimpleSocialNetwork/SimpleNet.App/Views/User/UserPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxVc2VyUGFnZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/rodme/RiderProjects/SimpleSocialNetwork/SimpleNet.App/Views/_ViewImports.cshtml]

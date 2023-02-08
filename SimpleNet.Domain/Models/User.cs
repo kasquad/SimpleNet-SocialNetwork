@@ -18,4 +18,7 @@ public class User
     public string HashedPassword { get; set; }
     
     public virtual ICollection<Note> Notes { get; set; }
+    public virtual ICollection<User> IncomingFriends { get; set; }
+    public virtual ICollection<User> OutgoingFriends { get; set; }
+
 }

@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using SimpleNet.AppConstants;
-using SimpleNet.Application.Notes.Create;
+using SimpleNet.Application.Notes.Commands.Create;
+using SimpleNet.Application.Notes.Queries.GetFriendsNotes;
 using SimpleNet.ViewModels.Notes;
 
 namespace SimpleNet.Controllers;
@@ -9,19 +10,31 @@ namespace SimpleNet.Controllers;
 public class NotesController : SNetController
 {
     [HttpGet("")]
-    public IActionResult Index()
+    public async Task<IActionResult> Index(
+        CancellationToken cancellationToken
+        )
     {
-        return View();
+        var query = new GetFriendsNotesQuery(UserId);
+        var result = await Mediator.Send(query, cancellationToken);
+
+        if (result.IsSuccess)
+        {
+            return View(result.Value);
+        }
+
+        return BadRequest(result.Errors);
     }
+    
 
     [HttpPost("create")]
     [ValidateAntiForgeryToken]
     public async Task<IActionResult> Create(
-        [FromForm] CreateNoteVm vm)
+        [FromForm] CreateNoteVm vm,
+        CancellationToken cancellationToken
+        )
     {
         var command = new CreateNoteCommand(UserId, vm.Body, vm.IsPersonal);
-
-        var result = await Mediator.Send(command);
+        var result = await Mediator.Send(command, cancellationToken);
 
         if(!result.IsSuccess)
         {

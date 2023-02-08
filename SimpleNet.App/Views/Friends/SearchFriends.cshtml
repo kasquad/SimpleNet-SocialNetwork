@@ -1,0 +1,33 @@
+﻿@model SimpleNet.Application.Users.Queries.GetUsersByName.SearchedUsersVm
+@{
+    ViewBag.Title = "Поиск пользователей";
+    Layout = "_Layout";
+}
+
+<h2>@ViewBag.Title</h2>
+
+<form asp-controller="Friends" asp-action="SearchFriends" method="get">
+    <p>
+        <input type="text" name="name" class="form-control" placeholder="Имя"/>
+        <input type="submit" value="Найти" class="btn btn-primary"/>
+    </p>
+</form>
+
+<div class="container">
+    @foreach (var user in Model.Users)
+    {
+       
+        <div class="container border-1 bg-white">
+            <a asp-controller="User"
+               asp-action="UserPage"
+               asp-route-visitUserId="@user.Id">
+                @user.Name
+            </a>
+            <form asp-controller="Friends" asp-action="AddFriend" method="post">
+                <input id="AcceptingUserId" name="AcceptingUserId" value="@user.Id" hidden/>
+                <input type="submit" class="btn btn-outline-primary" value="Добавить">
+            </form>
+        </div>
+    }
+</div>
+

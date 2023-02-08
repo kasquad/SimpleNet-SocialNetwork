@@ -17,7 +17,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Users\Commands" />
+      <Folder Include="Notes\Commands" />
     </ItemGroup>
 
 </Project>

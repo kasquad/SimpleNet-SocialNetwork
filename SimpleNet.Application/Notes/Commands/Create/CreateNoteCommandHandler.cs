@@ -3,11 +3,11 @@ using SimpleNet.Application.Abstractions.Messaging;
 using SimpleNet.Application.Helpers;
 using SimpleNet.Domain.Models;
 
-namespace SimpleNet.Application.Notes.Create;
+namespace SimpleNet.Application.Notes.Commands.Create;
 
 public class CreateNoteCommandHandler : IAppRequestHandler<CreateNoteCommand>
 {
-    private IAppDbContext _context;
+    private readonly IAppDbContext _context;
 
     public CreateNoteCommandHandler(IAppDbContext context)
     {

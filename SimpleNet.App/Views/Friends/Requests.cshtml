@@ -1,0 +1,34 @@
+﻿@model SimpleNet.Application.Friend.Queries.FriendsListVm
+
+@{
+    ViewBag.Title = "Друзья";
+    Layout = "_Layout";
+}
+
+<h2>@ViewBag.Title</h2>
+
+<div class="container mt-5">
+    <a asp-controller="Friends" asp-action="SearchFriends" class="btn btn-secondary">
+        Поиск новых друзей
+    </a>
+    
+    <div class="container mt-3">
+        <h4>
+            <a asp-controller="Friends" asp-action="Index" class="btn btn-secondary">
+                Список друзей
+            </a>
+        </h4>
+        @foreach (var user in Model.List)
+        {
+            <div class="container bg-white">
+                <h6>
+                    @user.Name
+                </h6>
+                <form asp-controller="Friends" asp-action="AcceptFriend" method="post">
+                    <input id="AcceptingUserId" name="AcceptingUserId" value="@user.Id" hidden/>
+                    <input type="submit" class="btn btn-primary" value="Принять"/>
+                </form>
+            </div>
+        }
+    </div>
+</div>

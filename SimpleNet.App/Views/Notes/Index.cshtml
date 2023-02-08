@@ -1,7 +1,14 @@
-﻿
+﻿@model SimpleNet.Application.Notes.Queries.GetFriendsNotes.FriendsNotesVm
+
 @{
     ViewBag.Title = "Новости";
     Layout = "_Layout";
 }
 
 <h2>@ViewBag.Title</h2>
+
+
+@foreach (var note in Model.Notes)
+{
+    <partial name="Partials/Notes/_showFriendNote" model="note"/>
+}

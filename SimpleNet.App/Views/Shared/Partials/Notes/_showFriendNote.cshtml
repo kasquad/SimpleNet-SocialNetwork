@@ -1,0 +1,12 @@
+﻿@model SimpleNet.Application.Notes.Queries.NoteVm
+
+<div class="container border-1 bg-white">
+        <h6>@Model.Body</h6>
+        <p>@Model.IsPersonal</p>
+        <a asp-controller="User" 
+           asp-action="UserPage"
+           asp-route-visitUserId="@Model.User.Id">
+                @Model.User.Name
+        </a>
+        <p> @Model.DateTime</p>
+</div>

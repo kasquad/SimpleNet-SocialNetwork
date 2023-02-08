@@ -82,6 +82,5 @@ public class AuthController : SNetController
             return BadRequest();
         }
         return RedirectToAction("Login");
-
     }
 }

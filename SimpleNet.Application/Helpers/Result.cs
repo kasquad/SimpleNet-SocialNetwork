@@ -1,4 +1,6 @@
-﻿namespace SimpleNet.Application.Helpers;
+﻿using SimpleNet.Application.Notes.Queries.GetFriendsNotes;
+
+namespace SimpleNet.Application.Helpers;
 
 public class Result
 {
